@@ -1,0 +1,977 @@
+@import url('common.css');
+
+header {}
+header > div {
+    width: 80%;
+    margin: 20px auto;
+    position: relative;
+}
+
+header div h1 {
+    text-align: center;
+}
+
+header div h1 a {
+    width: 97px; height: 88px;
+}
+.login {
+    position: absolute;
+    right: 0; top: 0;
+    
+}
+.login ul {
+}
+.login > ul li {
+    display: inline-block;
+    padding: 0 5px;
+}
+.login > ul li a {
+    font-size: 14px;
+}
+
+.login ul li:nth-of-type(1)::after {
+    content: '';
+    display: inline-block;
+    height: 10px;
+    border: 1px solid #333;
+    background: #333;
+    margin-left: 10px;
+}
+.search {
+    position: absolute;
+    right: 0; top: 30px;
+}
+
+.search input[type=text] {
+    outline-style: none;
+    border: none;
+}
+
+.search input[type=submit] {
+    background: url('../img/header_search.jpg') no-repeat;
+    width: 17px; height: 18px;
+    font-size: 0;
+    border: none;
+}
+
+nav {
+    width: 100%;
+    border-bottom: 1px solid #bcac96;
+    border-top: 1px solid #bcac96;
+    padding: 5px;
+   
+}
+.menu {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0;
+}
+
+.menu li {
+    width: 20%;
+    display: inline-block;
+    position: relative;
+}
+
+.menu li a {
+    font-size: .9em;
+}
+
+
+.menu li:hover a {
+    width: 100%;
+}
+
+.menu li div {
+    background: #bcac96;
+    position: absolute;
+    left: 50%; top: ;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: .5s;
+    padding: 20px 19.5%;
+    margin: 5px 0;
+}
+
+.menu li:hover div {
+    opacity: 1;
+}
+
+.menu li div a {
+    display: block;
+    text-align: center;
+    padding: 5px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.menu li div a:hover {
+    color: #333;
+    font-weight: bold;
+    border-bottom: 1px solid #bcac96;
+}
+/*==============================header===*/
+
+/*==========================main*/
+
+main {
+    width: 80%;
+    margin: 50px auto;
+}
+
+main .class {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.class figure {
+    width: 50%;
+    margin: 0 auto;
+    
+}
+.class figure img {
+    width: 100%;
+}
+.class article {
+    width: 45%;
+    
+}
+.class article h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1vw;
+}
+.class article .teacher {
+    width: 100%; 
+    background: #bcac96;
+    padding: 0 20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.class article .teacher figure {
+    width: 30%;
+    margin: 20px;
+}
+.class article .teacher figure img {
+    border-radius: 100%;
+}
+.class article .teacher figure figcaption {
+    text-align: center;
+}
+
+
+.teacher dl {
+    width: 65%;
+}
+.teacher dl dt {
+    margin-bottom: 5px;
+}
+
+.teacher dl dd {
+    margin: 0 0 5px 5px;
+    font-size: 0.9em;
+    vertical-align: middle;
+    
+}
+
+.price {
+    width: 100%;
+    margin: 0 auto;
+}
+.price p {
+    text-align: end;
+    padding: 0;
+}
+.price p mark {
+    background: transparent;
+    color: #cf3140;
+    font-size: 1.5em;
+}
+.price div {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.price div a:nth-of-type(1) {
+    background: #cf3140;
+    padding: 15px;
+    width: 85%;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+}
+.price div a:nth-of-type(2){
+    
+}
+.price div a:nth-of-type(2) img {}
+
+
+
+
+.division {
+    margin: 100px auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.division a:nth-of-type(1){
+    display: inline-block;
+    width: 50%;
+    border: 1px solid #bcac96;
+    border-left: none;
+    padding: 5px 0;
+    
+}
+.division a:nth-of-type(2) {
+    width: 50%;
+    border: 1px solid #bcac96;
+    border-left: none;
+    border-right: none;
+    padding: 5px 0;
+}
+
+.division a:hover {
+    background: #bcac96;
+    color: white;
+}
+
+/*REVIEW*/
+
+.review {
+    width: 50%;
+    margin: 0 auto 200px;
+}
+.review h3 {
+    font-size: 1.3em;
+}
+.review .review_table {}
+.review .review_table .user_feedback {
+    width: 100%;
+    background: rgba(188,172,150,0.3);
+    margin: 30px auto;
+    padding: 10px;
+}
+.review .review_table .user_feedback .user {
+    width: 100%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+.review .review_table .user_feedback .user img{
+    width: 50px; height: 50px;
+}
+.review .review_table .user_feedback .user figcaption{
+    display: inline-block;
+    font-size: 0.7em;
+    padding: 0 10px;
+}
+
+.review .review_table .user_feedback .feedback {
+    padding: 0 60px;
+}
+
+.review .review_table .btn {
+    width: 100%;
+    text-align: center;
+    margin: 50px auto;
+}
+.review .review_table .btn button {
+    background: transparent;
+    outline: none;
+    border: none;
+    padding: 0 20px;
+}
+
+/*footer*/
+
+footer {
+    width: 100%;
+    background: #fff;
+    border-top: 1px solid #bcac96;
+}
+
+.foot {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0
+}
+
+.foot_2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foot_2 p img {
+    float: left;
+}
+
+.text p {
+    text-align: center;
+    font-size: .8em;
+}
+
+.foot_3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foot_3 li {
+    display: inline-block;
+}
+
+.foot_3 li a img {
+    padding-right: 10px;
+}
+
+/*====================================================================*/
+@media (min-width:769px) and (max-width:1024px) {
+
+.class figure {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.class figure img {
+    width: 100%;
+}
+
+.class article {
+    width: 45%;
+}
+
+.class article h1 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 1vw;
+}
+
+.class article .teacher {
+    width: 100%;
+    background: #bcac96;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.class article .teacher figure {
+    width: 20%;
+    margin: 10px;
+}
+
+.class article .teacher figure img {
+    border-radius: 100%;
+}
+
+.class article .teacher figure figcaption {
+    font-size: .8em;
+    text-align: center;
+}
+
+.teacher dl {
+    width: 80%;
+}
+
+.teacher dl dt {
+    font-size: .9em;
+    margin-bottom: 5px;
+}
+
+.teacher dl dd {
+    padding: 0;
+    font-size: 0.8em;
+    vertical-align: middle;
+    word-break: keep-all;
+}
+
+.price {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.price p {
+    text-align: end;
+    padding: 0;
+}
+
+.price p mark {
+    background: transparent;
+    color: #cf3140;
+    font-size: 1em;
+
+}
+
+.price div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.price div a:nth-of-type(1) {
+    background: #cf3140;
+    padding: 5px;
+    width: 85%;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.price div a:nth-of-type(2) {
+    text-align: end;
+    }
+
+.price div a:nth-of-type(2) img {
+    width: 70%;
+    }
+
+}
+
+/*====================================================================*/
+@media (max-width:768px) {
+header .menu {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+    
+main {
+    width: 100%;
+}
+
+main .class {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+}
+.class figure {
+    width: 100%;
+    margin: 0 auto;
+    
+}
+.class figure img {
+    width: 100%;
+}
+.class article {
+    width: 100%;
+}
+.class article h1 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 3vw;
+    margin-top: 3vw;
+}
+.class article .teacher {
+    margin: 0 auto;
+    width: 60%; 
+    background: #bcac96;
+    padding: 10px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.class article .teacher figure {
+    width: 20%;
+    margin: 0 auto;
+}
+.class article .teacher figure img {
+    width: 100%;
+    border-radius: 100%;
+}
+.class article .teacher figure figcaption {
+    word-break: keep-all;
+    font-size: .8em;
+    text-align: center;
+}
+
+.teacher dl {
+    width: 75%;
+}
+.teacher dl dt {
+    margin-bottom: 0px;
+}
+
+.teacher dl dd {
+    margin: 0 0 5px 5px;
+    vertical-align: middle;
+}
+
+.price {
+    width: 60%;
+    margin: 0 auto;
+}
+.price p {
+    text-align: center;
+    padding: 0;
+}
+.price p mark {
+    background: transparent;
+    color: #cf3140;
+    font-size: 1.5em;
+    
+}
+.price div {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.price div a:nth-of-type(1) {
+    background: #cf3140;
+    padding: 15px;
+    width: 85%;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+}
+.price div a:nth-of-type(2){
+    
+}
+.price div a:nth-of-type(2) img {}
+    
+/*REVIEW*/
+
+.review {
+    width: 90%;
+    margin: 0 auto 200px;
+}
+.review h3 {
+    font-size: 1.3em;
+}
+.review .review_table {}
+.review .review_table .user_feedback {
+    width: 100%;
+    background: rgba(188,172,150,0.3);
+    margin: 30px auto;
+    padding: 10px;
+}
+.review .review_table .user_feedback .user {
+    width: 100%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+.review .review_table .user_feedback .user img{
+    width: 50px; height: 50px;
+}
+.review .review_table .user_feedback .user figcaption{
+    display: inline-block;
+    font-size: 0.7em;
+    padding: 0 10px;
+}
+
+.review .review_table .user_feedback .feedback {
+    padding: 0 60px;
+}
+
+.review .review_table .btn {
+    width: 100%;
+    text-align: center;
+    margin: 50px auto;
+}
+.review .review_table .btn button {
+    background: transparent;
+    outline: none;
+    border: none;
+    padding: 0 20px;
+}
+}
+
+/*====================================================================*/
+@media (max-width:480px) {
+header {
+    width: 100%;
+    position: fixed;
+    left: 0; top: 0;
+    background: #fff;
+    z-index: 1;
+}
+header > div {
+    width: 90%;
+    margin: 0px auto;
+    position: relative;
+}
+
+header div h1 {
+    text-align: left;
+}
+
+header div h1 a {
+    width: 50px;
+}
+
+.login {
+    position: absolute;
+    right: 0; top: 0;
+    display: none;
+}
+.login ul {
+}
+.login > ul li {
+    display: inline-block;
+    padding: 0 5px;
+}
+.login > ul li a {
+    font-size: 14px;
+}
+
+.login ul li:nth-of-type(1)::after {
+    content: '';
+    display: inline-block;
+    height: 10px;
+    border: 1px solid #333;
+    background: #333;
+    margin-left: 10px;
+}
+.search {
+    display: none;
+    position: absolute;
+    right: 0; top: 30px;
+}
+
+.search input[type=text] {
+    outline-style: none;
+    border: none;
+}
+
+.search input[type=submit] {
+    background: url('../img/header_search.jpg') no-repeat;
+    width: 17px; height: 18px;
+    font-size: 0;
+    border: none;
+}
+    
+.menu-trigger {
+    width: 26px; height: 16px;
+    position: absolute;
+    right: 0; top: 50%;
+    transform: translateY(-50%);
+    display: block;
+}
+
+.menu-trigger span {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+	height: 2px;
+    background: #bcac96;
+} 
+
+.menu-trigger span:nth-of-type(1) {
+	top: 0%;
+}
+
+.menu-trigger span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menu-trigger span:nth-of-type(3) {
+	top: 100%;
+    transform: translateY(-100%);
+}
+
+nav {
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    border-top: none;
+    border-bottom: none;
+    display: none;
+}
+.menu {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.menu li {
+    width: 100%;
+    display: block;
+    position: relative;
+    padding: 30px 20px;
+    text-align: right;
+}
+
+.menu > li > a {
+    font-size: 1.5em;
+    color: #333;
+    font-weight: bolder;
+}
+
+.menu li:hover a {
+    width: 100%;
+    border-bottom: 1px solid #bcac96;
+}
+
+.menu li div {
+    background: #fff;
+    position: absolute;
+    right: 0; top: 80%;
+    padding: 0 20px;
+    opacity: 0;
+    transition: .5s;
+    margin: 0;
+    transform: translateX(0%);
+    text-align: right;
+}
+
+.menu li:hover div {
+    opacity: 1;
+}
+
+.menu li div a {
+    display: block;
+    text-align: right;
+    text-transform: uppercase;
+    color: #bcac96;
+}
+
+.menu li > div > a:hover {
+    color: #333;
+    font-weight: lighter;
+    border-bottom: none;
+}
+    
+    
+main {
+    width: 100%;
+}
+
+main .class {
+    width: 100%;
+    margin: 100px auto 50px;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+}
+.class figure {
+    width: 100%;
+    margin: 0 auto;
+    
+}
+.class figure img {
+    width: 100%;
+}
+.class article {
+    width: 100%;
+}
+.class article h1 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 3vw;
+    margin-top: 3vw;
+}
+.class article .teacher {
+    margin: 0 auto;
+    width: 100%; 
+    background: #bcac96;
+    padding: 10px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.class article .teacher figure {
+    width: 20%;
+    margin: 0 auto;
+}
+.class article .teacher figure img {
+    width: 100%;
+    border-radius: 100%;
+}
+.class article .teacher figure figcaption {
+    word-break: keep-all;
+    font-size: .8em;
+    text-align: center;
+}
+
+.teacher dl {
+    width: 75%;
+    margin-left: 10px;
+}
+.teacher dl dt {
+    margin-bottom: 0px;
+}
+
+.teacher dl dd {
+    margin: 0 0 5px 5px;
+    vertical-align: middle;
+}
+
+.price {
+    width: 100%;
+    margin: 0 auto;
+}
+.price p {
+    text-align: end;
+    padding: 0;
+}
+.price p mark {
+    background: transparent;
+    color: #cf3140;
+    font-size: 1.5em;
+    
+}
+.price div {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.price div a:nth-of-type(1) {
+    background: #cf3140;
+    padding: 15px;
+    width: 85%;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+}
+.price div a:nth-of-type(2){
+    
+}
+.price div a:nth-of-type(2) img {}
+    
+/*구분선*/
+    
+.division {
+    margin: 20px auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.division a:nth-of-type(1){
+    display: inline-block;
+    width: 50%;
+    border: 1px solid #bcac96;
+    border-left: none;
+    padding: 5px 0;
+    
+}
+.division a:nth-of-type(2) {
+    width: 50%;
+    border: 1px solid #bcac96;
+    border-left: none;
+    border-right: none;
+    padding: 5px 0;
+}
+
+.division a:hover {
+    background: #bcac96;
+    color: white;
+}
+    
+/*REVIEW*/
+
+.review {
+    width: 100%;
+    margin: 10px auto;
+}
+.review h3 {
+    font-size: 1.3em;
+}
+.review .review_table {}
+.review .review_table .user_feedback {
+    width: 100%;
+    background: rgba(188,172,150,0.3);
+    margin: 30px auto 0;
+    padding: 10px;
+}
+.review .review_table .user_feedback .user {
+    width: 100%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+.review .review_table .user_feedback .user img{
+    width: 50px; height: 50px;
+}
+.review .review_table .user_feedback .user figcaption{
+    display: inline-block;
+    font-size: 0.7em;
+    padding: 0 10px;
+}
+
+.review .review_table .user_feedback .feedback {
+    padding: 0 60px;
+}
+
+.review .review_table .btn {
+    width: 100%;
+    text-align: center;
+    margin: 50px auto 20px;
+}
+.review .review_table .btn button {
+    background: transparent;
+    outline: none;
+    border: none;
+    padding: 0 20px;
+}
+
+
+footer {
+    width: 100%;
+    border-top: 1px solid #bcac96;
+    background: #fff;
+}
+
+.foot {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.foot_2 {
+    display: none;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foot_2 p img {
+    float: left;
+}
+
+.text p {
+    text-align: left;
+    font-size: .7em;
+}
+
+.foot_3 {
+    display: flex;
+    align-items: center;
+}
+
+.foot_3 > li {
+    width: 80%;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.foot_3 li a img {
+    width: 100%;
+    padding-right: 0;
+    margin: 0 auto;
+}
+
+}

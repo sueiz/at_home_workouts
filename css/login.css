@@ -1,0 +1,140 @@
+@import url('common.css');
+
+.dim-layer {
+/*    display: none;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.dim-layer .dimBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .5;
+    filter: alpha(opacity=50);
+}
+
+.pop-conts {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.pop-layer .btn-r {
+    position: absolute;
+    margin-top: -250px;
+    margin-left: 175px;
+}
+
+.dim-layer .pop-layer {
+    display: block;
+}
+
+a.btn-layerClose {
+    display: inline-block;
+    height: 20px;
+    padding: 0 5px 0;
+    background-color: none;
+    color: gray;
+    line-height: 15px;
+}
+
+a.btn-layerClose:hover {
+    border: 1px solid #091940;
+    border-radius: 2px;
+    background-color: #000;
+    opacity: 0.3;
+    color: #fff;
+}
+
+
+/*로그인창*/
+
+.l {
+    width: 400px;
+    height: 500px;
+    padding: 30px;
+    box-shadow: 5px 10px 20px gray;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.l h2 {
+    text-align: center;
+}
+
+.l .l_1 {
+    width: 100%;
+    margin: 50px auto 0px;
+}
+
+.l .l_1 p {
+}
+
+.l .l_1 p input {
+    width: 100%;
+    font-size: .8em;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #bcac96;
+    padding: 10px 0;
+}
+
+.l > .l_2 {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.l_2 p:nth-of-type(1) {
+    font-size: .8em;
+    color: #bcac96;
+}
+
+.l_2 p:nth-of-type(2) a {
+    font-size: .8em;
+    color: #bcac96;
+}
+
+
+.l > .l_3 {
+    margin: 50px auto;
+    text-align: center;
+}
+
+.l_3 p:nth-of-type(1) {
+    background: #bcac96;
+    color: #fff;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.l_3 p:nth-of-type(1) a {
+    color: #fff;
+}
+
+.l_3 p mark {
+    font-size: .8em;
+    background: none;
+    color: #c7c7c7;
+}
+
+.l_3 p:nth-of-type(2) a {
+    font-size: .8em;
+}

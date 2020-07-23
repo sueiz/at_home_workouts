@@ -1,0 +1,217 @@
+@import url('common.css');
+
+/*장바구니*/
+.cart {
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.cart .cart-wrap {
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.3);
+    background: #fff;
+    z-index: 1;
+}
+
+.cart h2 {
+    margin: 50px 0px 50px 20px;
+}
+
+.cart figure {
+    width: 90%;
+    margin: 0 auto;
+    display: table;
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 40px;
+
+}
+
+.cart figure::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -20px;
+    bottom: -20px;
+    width: 120%;
+    border-bottom: 1px solid #bcac96;
+
+}
+
+.cart figure img {
+    width: 100%;
+    display: table-cell;
+}
+
+.cart figure figcaption {
+    width: 70%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 20px;
+    position: relative;
+    font-size: .9em;
+}
+
+.cart figure figcaption p {
+    margin-top: 0px;
+    font-size: .9em;
+}
+
+.cart figure figcaption a {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: .9em;
+    z-index: 15;
+}
+
+.cart .cart_price {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.cart .cart_price div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart .cart_price p:nth-of-type(1) {
+    display: inline;
+}
+
+.cart .cart_price p:nth-of-type(2) {
+    display: inline;
+}
+
+.cart .cart_price a {
+    display: inline-block;
+    background: #cf3140;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+    margin: 20px auto;
+}
+
+.cart .bg {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+/*====================================================================*/
+@media (min-width:769px) and (max-width:1024px) {
+    .cart .cart-wrap {
+        width: 40%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.3);
+        background: #fff;
+        z-index: 1;
+    }
+}
+
+/*====================================================================*/
+@media (max-width:768px) {
+    .cart .cart-wrap {
+        width: 45%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.3);
+        background: #fff;
+        z-index: 1;
+    }
+
+    .cart figure figcaption {
+        width: 70%;
+        display: table-cell;
+        vertical-align: middle;
+        padding: 0 20px;
+        position: relative;
+        font-size: .8em;
+    }
+
+    .cart figure figcaption a {
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        right: 10px;
+        top: 0;
+        font-size: .9em;
+        z-index: 15;
+    }
+}
+
+/*====================================================================*/
+@media (max-width:480px) {
+    .cart .cart-wrap {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.3);
+        background: #fff;
+        z-index: 1;
+    }
+    .cart h2 {
+        margin: 50px 50px;
+    }
+    .cart figure figcaption {
+        width: 70%;
+        display: table-cell;
+        vertical-align: middle;
+        padding: 0 20px;
+        position: relative;
+        font-size: 1em;
+    }
+
+    .cart figure figcaption a {
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        right: 10px;
+        top: 0;
+        font-size: .9em;
+        z-index: 15;
+    }
+
+    .cart .cart_price p:nth-of-type(1) {
+        display: inline;
+        font-size: 13px;
+    }
+
+    .cart .cart_price p:nth-of-type(2) {
+        display: inline;
+        font-size: 13px;
+    }
+
+    .cart .cart_price a {
+        display: inline-block;
+        background: #cf3140;
+        padding: 8px;
+        width: 100%;
+        text-align: center;
+        border-radius: 10px;
+        color: #fff;
+        margin: 20px auto;
+    }
+
+
+}

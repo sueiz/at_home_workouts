@@ -1,0 +1,799 @@
+@import url('common.css');
+
+header {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #fff;
+    z-index: 1;
+}
+
+header > div {
+    width: 80%;
+    margin: 20px auto;
+    position: relative;
+}
+
+header div h1 {
+    text-align: center;
+}
+
+header div h1 a {
+    width: 97px;
+    height: 88px;
+}
+
+.login {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+}
+
+.login ul {}
+
+.login > ul li {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.login > ul li a {
+    font-size: 14px;
+}
+
+.login ul li:nth-of-type(1)::after {
+    content: '';
+    display: inline-block;
+    height: 10px;
+    border: 1px solid #333;
+    background: #333;
+    margin-left: 10px;
+}
+
+.search {
+    position: absolute;
+    right: 0;
+    top: 30px;
+}
+
+.search input[type=text] {
+    outline-style: none;
+    border: none;
+}
+
+.search input[type=submit] {
+    background: url('../img/header_search.jpg') no-repeat;
+    width: 17px;
+    height: 18px;
+    font-size: 0;
+    border: none;
+}
+
+.menu-trigger {
+    width: 26px;
+    height: 16px;
+    position: absolute;
+    right: 0;
+    bottom: 1%;
+    display: none;
+}
+
+.menu-trigger span {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background: #333;
+}
+
+.menu-trigger span:nth-of-type(1) {
+    top: 0%;
+}
+
+.menu-trigger span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menu-trigger span:nth-of-type(3) {
+    top: 100%;
+    transform: translateY(-100%);
+}
+
+nav {
+    width: 100%;
+    border-bottom: 1px solid #bcac96;
+    border-top: 1px solid #bcac96;
+    padding: 5px;
+
+}
+
+.menu {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0;
+}
+
+.menu li {
+    width: 19.5%;
+    display: inline-block;
+    position: relative;
+
+}
+
+.menu li a {
+    font-size: .9em;
+}
+
+
+.menu li:hover a {
+    width: 100%;
+}
+
+.menu li div {
+    background: #bcac96;
+    position: absolute;
+    left: 50%;
+    top: ;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: .5s;
+    padding: 20px 19.5%;
+    margin: 5px 0;
+}
+
+.menu li:hover div {
+    opacity: 1;
+}
+
+.menu li div a {
+    display: block;
+    text-align: center;
+    padding: 5px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.menu li div a:hover {
+    color: #333;
+    font-weight: bold;
+    border-bottom: 1px solid #bcac96;
+}
+
+/*==============================header===*/
+
+main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.about {
+    width: 100%;
+    margin: 200px auto;
+}
+
+.about .vdo {
+    width: 100%;
+}
+
+.about .vdo video {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.about .vdo video source {
+    width: 100%;
+    margin: 50px 0;
+}
+
+.text {
+    width: 80%;
+    margin: 150px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text .ahw {
+    width: 40%;
+}
+
+.text .ahw h2 {
+    font-size: 3em;
+    text-align: center;
+}
+
+.text .ahw h2 mark {
+    font-size: 1.5em;
+    background-color: transparent;
+    color: #bcac96;
+}
+
+.text .explain {
+    width: 60%;
+}
+
+.text .explain h3 {}
+
+.text .explaing p {}
+
+/*============================footer*/
+footer {
+    width: 100%;
+    background: #efe7df;
+}
+
+.foot {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0
+}
+
+.foot_2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foot_2 p img {
+    float: left;
+}
+
+.foot_text p {
+    text-align: center;
+    font-size: .8em;
+}
+
+.foot_3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foot_3 li {
+    display: inline-block;
+}
+
+.foot_3 li a img {
+    padding-right: 10px;
+}
+
+
+/*========================================================================*/
+@media (min-width:769px) and (max-width:1024px) {
+    header {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background: #fff;
+        z-index: 1;
+    }
+
+    header > div {
+        width: 80%;
+        margin: 20px auto;
+        position: relative;
+    }
+
+    header div h1 {
+        text-align: center;
+    }
+
+    header div h1 a {
+        width: 97px;
+        height: 88px;
+    }
+
+    .login {
+        position: absolute;
+        right: 0;
+        top: 0;
+
+    }
+
+    .login ul {}
+
+    .login > ul li {
+        display: inline-block;
+        padding: 0 5px;
+    }
+
+    .login > ul li a {
+        font-size: 14px;
+    }
+
+    .login ul li:nth-of-type(1)::after {
+        content: '';
+        display: inline-block;
+        height: 10px;
+        border: 1px solid #333;
+        background: #333;
+        margin-left: 10px;
+    }
+
+    .search {
+        position: absolute;
+        right: 0;
+        top: 30px;
+    }
+
+    .search input[type=text] {
+        outline-style: none;
+        border: none;
+    }
+
+    .search input[type=submit] {
+        background: url('../img/header_search.jpg') no-repeat;
+        width: 17px;
+        height: 18px;
+        font-size: 0;
+        border: none;
+    }
+
+    nav {
+        width: 100%;
+        border-bottom: 1px solid #bcac96;
+        border-top: 1px solid #bcac96;
+        padding: 5px;
+
+    }
+
+    .menu {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .menu li {
+        width: 19.5%;
+        display: inline-block;
+        position: relative;
+
+    }
+
+    .menu li a {
+        font-size: .9em;
+    }
+
+
+    .menu li:hover a {
+        width: 100%;
+    }
+
+    .menu li div {
+        background: #bcac96;
+        position: absolute;
+        left: 50%;
+        top: ;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: .5s;
+        padding: 20px 19.5%;
+        margin: 5px 0;
+    }
+
+    .menu li:hover div {
+        opacity: 1;
+    }
+
+    .menu li div a {
+        display: block;
+        text-align: center;
+        padding: 5px;
+        text-transform: uppercase;
+        color: white;
+    }
+
+    .menu li div a:hover {
+        color: #333;
+        font-weight: bold;
+        border-bottom: 1px solid #bcac96;
+    }
+
+    /*==============================header===*/
+
+    main {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .about {
+        min-width: 100%;
+    }
+
+    .about .vdo {
+        width: 100%;
+    }
+
+    .about .vdo video {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .about .vdo video source {
+        width: 100%;
+        margin-bottom: 100px;
+
+    }
+
+    .text {
+        width: 80%;
+        margin: 150px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .text .ahw {
+        width: 40%;
+    }
+
+    .text .ahw h2 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .text .ahw h2 mark {
+        font-size: 2em;
+        background-color: transparent;
+        color: #bcac96;
+    }
+
+    .text .explain {
+        width: 60%;
+    }
+
+    .text .explain h3 {}
+
+    .text .explaing p {}
+
+    /*============================footer*/
+    footer {
+        width: 100%;
+        background: #efe7df;
+    }
+
+    .foot {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0
+    }
+
+    .foot_2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .foot_2 p img {
+        float: left;
+    }
+
+    .foot_text p {
+        text-align: center;
+        font-size: .8em;
+    }
+
+    .foot_3 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .foot_3 li {
+        display: inline-block;
+    }
+
+    .foot_3 li a img {
+        padding-right: 10px;
+    }
+
+}
+
+/*====================================================================*/
+@media (max-width:768px) {
+    header .menu {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    main {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .about {
+        width: 100%;
+    }
+
+    .about .vdo video source {
+        width: 100%;
+
+    }
+
+    .text {
+        width: 80%;
+        margin: 130px auto;
+        display: block;
+        text-align: center;
+    }
+
+    .text .ahw {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .text .ahw h2 {
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    .text .ahw h2 mark {
+        font-size: 1.8em;
+        background-color: transparent;
+        color: #bcac96;
+    }
+
+    .text .expalin {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .text .expalin h3 {}
+
+    .text .expalin p {
+        font-size: 15px;
+    }
+
+}
+
+/*========================================================================*/
+
+@media (max-width:480px) {
+    header {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background: #fff;
+        z-index: 1;
+    }
+
+    header > div {
+        width: 90%;
+        margin: 0px auto;
+        position: relative;
+    }
+
+    header div h1 {
+        text-align: left;
+    }
+
+    header div h1 a {
+        width: 50px;
+    }
+
+    .login {
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: none;
+    }
+
+    .login ul {}
+
+    .login > ul li {
+        display: inline-block;
+        padding: 0 5px;
+    }
+
+    .login > ul li a {
+        font-size: 14px;
+    }
+
+    .login ul li:nth-of-type(1)::after {
+        content: '';
+        display: inline-block;
+        height: 10px;
+        border: 1px solid #333;
+        background: #333;
+        margin-left: 10px;
+    }
+
+    .search {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 30px;
+    }
+
+    .search input[type=text] {
+        outline-style: none;
+        border: none;
+    }
+
+    .search input[type=submit] {
+        background: url('../img/header_search.jpg') no-repeat;
+        width: 17px;
+        height: 18px;
+        font-size: 0;
+        border: none;
+    }
+
+    .menu-trigger {
+        width: 26px;
+        height: 16px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        display: block;
+    }
+
+    .menu-trigger span {
+        position: absolute;
+        display: inline-block;
+        width: 100%;
+        height: 2px;
+        background: #bcac96;
+    }
+
+    .menu-trigger span:nth-of-type(1) {
+        top: 0%;
+    }
+
+    .menu-trigger span:nth-of-type(2) {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .menu-trigger span:nth-of-type(3) {
+        top: 100%;
+        transform: translateY(-100%);
+    }
+
+    nav {
+        width: 100%;
+        background: #fff;
+        position: absolute;
+        border-top: none;
+        border-bottom: none;
+        display: none;
+    }
+
+    .menu {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    .menu li {
+        width: 100%;
+        display: block;
+        position: relative;
+        padding: 30px 20px;
+        text-align: right;
+    }
+
+    .menu > li > a {
+        font-size: 1.5em;
+        color: #333;
+        font-weight: bolder;
+    }
+
+    .menu li:hover a {
+        width: 100%;
+        border-bottom: 1px solid #bcac96;
+    }
+
+    .menu li div {
+        background: #fff;
+        position: absolute;
+        right: 0;
+        top: 80%;
+        padding: 0 20px;
+        opacity: 0;
+        transition: .5s;
+        margin: 0;
+        transform: translateX(0%);
+        text-align: right;
+    }
+
+    .menu li:hover div {
+        opacity: 1;
+    }
+
+    .menu li div a {
+        display: block;
+        text-align: right;
+        text-transform: uppercase;
+        color: #bcac96;
+    }
+
+    .menu li > div > a:hover {
+        color: #333;
+        font-weight: lighter;
+        border-bottom: none;
+    }
+
+    main {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .about {
+        width: 100%;
+        margin: 100px auto;
+    }
+
+    .about .vdo video source {
+        width: 100%;
+
+    }
+
+    .text {
+        width: 80%;
+        margin: 130px auto;
+        display: block;
+        text-align: center;
+    }
+
+    .text .ahw {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .text .ahw h2 {
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    .text .ahw h2 mark {
+        font-size: 1.8em;
+        background-color: transparent;
+        color: #bcac96;
+    }
+
+    .text .expalin {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .text .expalin h3 {}
+
+    .text .expalin p {
+        font-size: 19px;
+    }
+
+    .foot {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .foot_text p {
+        text-align: center;
+        font-size: .5em;
+    }
+
+}

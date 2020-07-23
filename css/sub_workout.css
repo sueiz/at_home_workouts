@@ -1,0 +1,1213 @@
+@import url('common.css');
+
+header {
+    width: 100%;
+    position: fixed;
+    left: 0; top: 0;
+    background: #fff;
+    z-index: 1;
+}
+header > div {
+    width: 80%;
+    margin: 20px auto;
+    position: relative;
+}
+
+header div h1 {
+    text-align: center;
+}
+
+header div h1 a {
+    width: 97px; height: 88px;
+}
+.login {
+    position: absolute;
+    right: 0; top: 0;
+    
+}
+.login ul {
+}
+.login > ul li {
+    display: inline-block;
+    padding: 0 5px;
+}
+.login > ul li a {
+    font-size: 14px;
+}
+
+.login ul li:nth-of-type(1)::after {
+    content: '';
+    display: inline-block;
+    height: 10px;
+    border: 1px solid #333;
+    background: #333;
+    margin-left: 10px;
+}
+.search {
+    position: absolute;
+    right: 0; top: 30px;
+}
+
+.search input[type=text] {
+    outline-style: none;
+    border: none;
+}
+
+.search input[type=submit] {
+    background: url('../img/header_search.jpg') no-repeat;
+    width: 17px; height: 18px;
+    font-size: 0;
+    border: none;
+}
+
+.menu-trigger {
+    width: 26px; height: 16px;
+    position: absolute;
+    right: 0; bottom: 1%;
+    display: none;
+}
+
+.menu-trigger span {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+	height: 2px;
+    background: #333;
+} 
+
+.menu-trigger span:nth-of-type(1) {
+	top: 0%;
+}
+
+.menu-trigger span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menu-trigger span:nth-of-type(3) {
+	top: 100%;
+    transform: translateY(-100%);
+}
+
+nav {
+    width: 100%;
+    border-bottom: 1px solid #bcac96;
+    border-top: 1px solid #bcac96;
+    padding: 5px;
+   
+}
+.menu {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0;
+}
+
+.menu li {
+    width: 19.5%;
+    display: inline-block;
+    position: relative;
+    
+}
+
+.menu li a {
+    font-size: .9em;
+}
+
+
+.menu li:hover a {
+    width: 100%;
+}
+
+.menu li div {
+    background: #bcac96;
+    position: absolute;
+    left: 50%; top: ;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: .5s;
+    padding: 20px 19.5%;
+    margin: 5px 0;
+}
+
+.menu li:hover div {
+    opacity: 1;
+}
+
+.menu li div a {
+    display: block;
+    text-align: center;
+    padding: 5px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.menu li div a:hover {
+    color: #333;
+    font-weight: bold;
+    border-bottom: 1px solid #bcac96;
+}
+/*header*/
+
+/*main 1-1 spot*/
+main {
+    width: 100%;
+    margin: 100px auto;
+}
+.sub_spot {
+    margin: 200px auto;
+    width: 100%;
+    height: 22vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.sub_spot .spot_wrap {
+    width: 100%;
+}
+
+
+.spot_01 {
+    margin: 0px auto;
+    width: 100%;
+    height: 20vw;
+    background: #bcac96;
+    position: absolute;
+}
+
+.spot_01 figure {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.spot_01 figure img {
+    width: 60%;
+    padding: 50px;
+}
+
+.spot_01 figure figcaption {
+    width: 40%;
+    white-space: pre-line;
+    color: #fff;
+    font-size: 1.5em;
+    transform: translateY(-50%);   
+}
+
+.spot_02 {
+    margin: 0 auto;
+    width: 100%;
+    height: 20vw;
+    background: black;
+    position: absolute;
+
+}
+.spot_02 figure {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.spot_02 figure img {
+    width: 60%;
+    padding: 50px;
+}
+
+.spot_02 figure figcaption {
+    width: 40%;
+    white-space: pre-line;
+    color: #fff;
+    font-size: 1.5em;
+    transform: translateY(-50%);   
+}
+
+.spot_03 {
+    margin: 0 auto;
+    width: 100%;
+    height: 20vw;
+    background: black;
+    position: absolute;
+
+}
+.spot_03 figure {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.spot_03 figure img {
+    width: 60%;
+    padding: 50px;
+}
+
+.spot_03 figure figcaption {
+    width: 40%;
+    white-space: pre-line;
+    color: #fff;
+    font-size: 1.5em;
+    transform: translateY(-50%);   
+}
+
+.sub_spot .spot_wrap .spot_02 {left: 100%;}
+.sub_spot .spot_wrap .spot_03 {left: 200%;}
+.sub_spot:hover .spot_wrap {
+    left: -100%;
+}
+
+.sub_spot .indi {
+    width: 30%;
+    position: absolute;
+    right: 10%; bottom: 20%; 
+}
+
+.sub_spot .indi a {
+    border: 1px solid #fff;
+    display: inline-block;
+    width: 10%;
+    height: 5px;
+}
+
+.sub_spot .indi a:hover{
+    background: #fff;
+}
+
+/*main 1-2 class*/
+
+main .class {
+    width: 80%;
+    margin: 200px auto;
+    position: relative;
+}
+
+.class h2 {
+    font-size: 1.5em;
+    color: #333;
+    text-align: left;
+    border-bottom: 5px solid #bcac96;
+    width: 5%;
+}
+
+.class ul {
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0;
+}
+
+.class ul li {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.class ul li:nth-of-type(4) {
+    padding-right: 0px;
+}
+
+.class ul li a {}
+
+.class ul li a figure {}
+
+.class ul li a figure img {
+    width: 100%;
+}
+
+.class ul li a figure figcaption {
+    width: 100%;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.class ul li a figure figcaption p {
+    width: 70%;
+}
+.class ul li a figure figcaption p mark {
+    background: transparent;
+    font-size: 12px;
+}
+
+.teacher {
+    margin: 0 auto;
+    width: 25%;
+}
+
+.teacher img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.teacher > p {
+    font-size: 12px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.price::before {
+    content: '';
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #bcac96;
+    margin: 20px 0;
+}
+.price {
+    width: 100%;
+    margin: 0 auto;
+}
+.price p {
+}
+
+.price p mark {
+    background: transparent;
+    font-size: 1.3em;
+    color: #cf3140;
+}
+
+.class > .arrow {
+    width: 110%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    position: absolute;
+    left: -5%; top: 38%;
+}
+.arrow .left {
+    border: none;
+    background: transparent;
+    outline: none;
+}
+.arrow .right {}
+.arrow button:hover {
+    background: rgba(224,224,224,0.5);
+}
+
+/*main 1-3 best 강의*/
+main .best {
+    width: 80%;
+    margin: 200px auto;
+    position: relative;
+}
+
+.best h2 {
+    font-size: 1.5em;
+    color: #333;
+    text-align: left;
+    border-bottom: 5px solid #bcac96;
+    width: 13%;
+}
+
+.best ul {
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.best ul li {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.best ul li:nth-of-type(4) {
+    padding-right: 0px;
+}
+
+.best ul li a {}
+
+.best ul li a figure {}
+
+.best ul li a figure img {
+    width: 100%;
+}
+
+
+.best ul li a figure figcaption {
+    width: 100%;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.best ul li a figure figcaption p {
+    width: 70%;
+}
+.best ul li a figure figcaption p mark {
+    background: transparent;
+    font-size: 12px;
+}
+
+.best .teacher {
+    margin: 0 auto;
+    width: 25%;
+}
+
+.best .teacher img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.best .teacher > p {
+    font-size: 12px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.best .price::before {
+    content: '';
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #bcac96;
+    margin: 20px 0;
+}
+.best .price {
+    width: 100%;
+    margin: 0 auto;
+}
+.best .price p {
+}
+
+.best .price p mark {
+    background: transparent;
+    font-size: 1.3em;
+    color: #cf3140;
+}
+
+.best > .arrow {
+    width: 110%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    position: absolute;
+    left: -5%; top: 38%;
+}
+.arrow .left {
+    border: none;
+    background: transparent;
+    outline: none;
+}
+.arrow .right {}
+.arrow button:hover {
+    background: rgba(224,224,224,0.5);
+}
+
+/*footer*/
+
+footer {
+    width: 100%;
+    background: #fff;
+    border-top: 1px solid #bcac96;
+}
+
+.foot {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0
+}
+
+.foot_2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foot_2 p img {
+    float: left;
+}
+
+.text p {
+    text-align: center;
+    font-size: .8em;
+}
+
+.foot_3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foot_3 li {
+    display: inline-block;
+}
+
+.foot_3 li a img {
+    padding-right: 10px;
+}
+/*====================================================================*/
+@media (max-width:768px) {
+header .menu {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+    
+main {
+    width: 100%;
+}
+.sub_spot {
+    width: 100%;
+    height: 25vw;
+    position: relative;
+    overflow: hidden;
+}
+.spot_01 {
+    margin: 0px auto;
+    width: 100%;
+    height: 20vw;
+    background: #bcac96;
+    position: absolute;
+}
+
+.spot_01 figure {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.spot_01 figure img {
+    width: 60%;
+    padding: 20px;
+}
+
+.spot_01 figure figcaption {
+    width: 40%;
+    font-size: 1em;
+    white-space: pre-line;
+    color: #fff;
+    text-align: right;
+    padding-right: 20px;
+}
+    
+.sub_spot .indi {
+    display: none;
+}
+    
+/*main 1-2 class*/
+
+main .class {
+    width: 90%;
+    margin: 50px auto;
+    position: relative;
+}
+    
+.class h2 {
+    font-size: 1.3em;
+    color: #333;
+    text-align: left;
+    border-bottom: 5px solid #bcac96;
+    width: 10%;
+}
+
+.class ul {
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0;
+}
+
+.class ul li {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.class ul li:nth-of-type(4) {
+    padding-right: 0px;
+}
+
+.class ul li a {}
+
+.class ul li a figure {
+    width: 100%;
+    }
+
+.class ul li a figure img {
+    width: 100%;
+}
+
+.class ul li a figure figcaption {
+    width: 100%;
+}
+
+.class ul li a figure figcaption p {
+    width: 100%;
+    font-size: .9em;
+}
+.class ul li a figure figcaption p mark {
+    background: transparent;
+    font-size: 12px;
+}
+
+.teacher {
+    display: none;
+}
+
+.price::before {
+    content: '';
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #bcac96;
+    margin: 10px 0;
+}
+.price {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.price p mark {
+    background: transparent;
+    font-size: 0.9em;
+    color: #cf3140;
+}
+    
+/*main 1-3 best 강의*/
+main .best {
+    width: 90%;
+    margin: 50px auto;
+    position: relative;
+}
+
+.best h2 {
+    font-size: 1.3em;
+    color: #333;
+    text-align: left;
+    border-bottom: 5px solid #bcac96;
+    width: 25%;
+}
+
+.best ul {
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.best ul li {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.best ul li:nth-of-type(4) {
+    padding-right: 0px;
+}
+
+.best ul li a {}
+
+.best ul li a figure {}
+
+.best ul li a figure img {
+    width: 100%;
+}
+
+
+.best ul li a figure figcaption {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.best ul li a figure figcaption p {
+    width: 100%;
+    font-size: .9em;
+}
+.best ul li a figure figcaption p mark {
+    background: transparent;
+    font-size: 12px;
+}
+
+
+.best .price::before {
+    content: '';
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #bcac96;
+    margin: 10px 0;
+}
+.best .price {
+    width: 100%;
+    margin: 0 auto;
+}
+.best .price p {
+}
+
+.best .price p mark {
+    background: transparent;
+    font-size: 0.9em;
+    color: #cf3140;
+}
+}
+
+/*====================================================================*/
+@media (max-width:480px) {
+header {
+    width: 100%;
+    position: fixed;
+    left: 0; top: 0;
+    background: #fff;
+    z-index: 1;
+}
+header > div {
+    width: 90%;
+    margin: 0px auto;
+    position: relative;
+}
+
+header div h1 {
+    text-align: left;
+}
+
+header div h1 a {
+    width: 50px;
+}
+
+.login {
+    position: absolute;
+    right: 0; top: 0;
+    display: none;
+}
+.login ul {
+}
+.login > ul li {
+    display: inline-block;
+    padding: 0 5px;
+}
+.login > ul li a {
+    font-size: 14px;
+}
+
+.login ul li:nth-of-type(1)::after {
+    content: '';
+    display: inline-block;
+    height: 10px;
+    border: 1px solid #333;
+    background: #333;
+    margin-left: 10px;
+}
+.search {
+    display: none;
+    position: absolute;
+    right: 0; top: 30px;
+}
+
+.search input[type=text] {
+    outline-style: none;
+    border: none;
+}
+
+.search input[type=submit] {
+    background: url('../img/header_search.jpg') no-repeat;
+    width: 17px; height: 18px;
+    font-size: 0;
+    border: none;
+}
+    
+.menu-trigger {
+    width: 26px; height: 16px;
+    position: absolute;
+    right: 0; top: 50%;
+    transform: translateY(-50%);
+    display: block;
+}
+
+.menu-trigger span {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+	height: 2px;
+    background: #bcac96;
+} 
+
+.menu-trigger span:nth-of-type(1) {
+	top: 0%;
+}
+
+.menu-trigger span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menu-trigger span:nth-of-type(3) {
+	top: 100%;
+    transform: translateY(-100%);
+}
+
+nav {
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    border-top: none;
+    border-bottom: none;
+    display: none;
+}
+.menu {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.menu li {
+    width: 100%;
+    display: block;
+    position: relative;
+    padding: 30px 20px;
+    text-align: right;
+}
+
+.menu > li > a {
+    font-size: 1.5em;
+    color: #333;
+    font-weight: bolder;
+}
+
+.menu li:hover a {
+    width: 100%;
+    border-bottom: 1px solid #bcac96;
+}
+
+.menu li div {
+    background: #fff;
+    position: absolute;
+    right: 0; top: 80%;
+    padding: 0 20px;
+    opacity: 0;
+    transition: .5s;
+    margin: 0;
+    transform: translateX(0%);
+    text-align: right;
+}
+
+.menu li:hover div {
+    opacity: 1;
+}
+
+.menu li div a {
+    display: block;
+    text-align: right;
+    text-transform: uppercase;
+    color: #bcac96;
+}
+
+.menu li > div > a:hover {
+    color: #333;
+    font-weight: lighter;
+    border-bottom: none;
+}
+    
+main {
+    width: 100%;
+    margin: 0px auto;
+}
+    
+.sub_spot {
+    margin: 100px auto 50px;
+    width: 100%;
+    height: 32vw;
+    position: relative;
+    overflow: hidden;
+}
+.spot_01 {
+    margin: 0px auto;
+    width: 100%;
+    height: 28vw;
+    background: #bcac96;
+    position: absolute;
+}
+
+.spot_01 figure {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.spot_01 figure img {
+    width: 60%;
+    padding: 10px;
+}
+
+.spot_01 figure figcaption {
+    width: 40%;
+    white-space: normal;
+    padding: 0 10px;
+    color: #fff;
+    font-size: .8em;
+    transform: translateY(0%);   
+}
+    
+    /*main 1-2 class*/
+
+main .class {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+    
+.class h2 {
+    font-size: 1em;
+    color: #333;
+    text-align: left;
+    border-bottom: 5px solid #bcac96;
+    width: 15%;
+}
+
+.class ul {
+    margin: 20px auto;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0;
+}
+
+.class ul li {
+    display: inline-block;
+    padding-right: 0px;
+    margin: 30px 0;
+}
+
+.class ul li:nth-of-type(4) {
+    padding-right: 0px;
+}
+
+.class ul li a {}
+
+.class ul li a figure {
+    width: 100%;
+    }
+
+.class ul li a figure img {
+    width: 100%;
+}
+
+.class ul li a figure figcaption {
+    width: 100%;
+}
+
+.class ul li a figure figcaption > p {
+    width: 70%;
+    font-size: .9em;
+}
+.class ul li a figure figcaption p mark {
+    background: transparent;
+    font-size: 12px;
+}
+
+ .teacher {
+    display: block;
+    margin: 0;
+    width: 20%;
+}
+
+.class > .teacher img {
+    width: 100%;
+    border-radius: 50%;
+    
+}
+
+.class > .teacher > p {
+    width: 100%;
+    font-size:.6em;
+    text-align: center;
+    margin: 0;
+}
+
+.price::before {
+    content: '';
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #bcac96;
+    margin: 10px 0;
+}
+.price {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.price p mark {
+    background: transparent;
+    font-size: 0.9em;
+    color: #cf3140;
+}
+    
+/*main 1-3 best 강의*/
+main .best {
+    width: 90%;
+    margin: 0 auto 50px;
+    position: relative;
+}
+
+.best h2 {
+    font-size: 1em;
+    color: #333;
+    text-align: left;
+    border-bottom: 5px solid #bcac96;
+    width: 35%;
+}
+
+.best ul {
+    margin: 20px auto;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.best ul li {
+    display: inline-block;
+    padding-right: 0px;
+    margin: 30px 0;
+}
+
+.best ul li:nth-of-type(4) {
+    padding-right: 0px;
+}
+
+.best ul li a {}
+
+.best ul li a figure {}
+
+.best ul li a figure img {
+    width: 100%;
+}
+
+
+.best ul li a figure figcaption {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.best ul li a figure figcaption > p {
+    width: 70%;
+    font-size: .9em;
+}
+.best ul li a figure figcaption p mark {
+    background: transparent;
+    font-size: 12px;
+}
+    
+.best > .teacher{
+    display: block;
+    margin: 0;
+    width: 20%;
+}
+
+.best >.teacher img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.best > p {
+    width: 100%;
+    font-size:.6em;
+    text-align: center;
+    margin: 0;
+}
+
+
+.best .price::before {
+    content: '';
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #bcac96;
+    margin: 10px 0;
+}
+.best .price {
+    width: 100%;
+    margin: 0 auto;
+}
+.best .price p {
+}
+
+.best .price p mark {
+    background: transparent;
+    font-size: 0.9em;
+    color: #cf3140;
+}
+    
+.class > .arrow,
+.best > .arrow{
+    width: 110%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    position: absolute;
+    left: -5%; top: 38%;
+    display: none;
+}
+.arrow .left {
+    border: none;
+    background: transparent;
+    outline: none;
+}
+.arrow .right {}
+.arrow button:hover {
+    background: rgba(224,224,224,0.5);
+}
+
+footer {
+    width: 100%;
+    border-top: 1px solid #bcac96;
+    background: #fff;
+}
+
+.foot {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.foot_2 {
+    display: none;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foot_2 p img {
+    float: left;
+}
+
+.text p {
+    text-align: left;
+    font-size: .7em;
+}
+
+.foot_3 {
+    display: flex;
+    align-items: center;
+}
+
+.foot_3 > li {
+    width: 80%;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.foot_3 li a img {
+    width: 100%;
+    padding-right: 0;
+    margin: 0 auto;
+}
+
+}
