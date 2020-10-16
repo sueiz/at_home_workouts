@@ -126,10 +126,41 @@
             </div>
         </div>
         <div class= "pos_fix">
-        <a class= "top">TOP</a>
+        <a id= "MOVE_TOP_BNT" href="#">TOP</a>
     </div>
 
     </main>
+    
+    <script>
+        var body = document.querySelector('body');
+        var menu = document.querySelectorAll('.menu a');
+
+
+        setTimeout(function() {
+            body.classList.add('active');
+        }, 10);
+
+        menu[1].addEventListener('click', function(e) {
+            e.preventDefault();
+            body.classList.remove('active');
+
+            setTimeout(function() {
+                location.href = menu[1].href;
+            }, 1000);
+        });
+        
+        menu[0].addEventListener('click', function(e) {
+            e.preventDefault();
+            body.classList.remove('active');
+
+            setTimeout(function() {
+                location.href = menu[0].href;
+            }, 1000);
+        });
+
+    </script>
+   
+
 
 
     <footer>

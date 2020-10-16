@@ -11,8 +11,8 @@
 </head>
 
 <body>
-<header>
-        <div>
+    <header>
+      <div>
             <h1><a href="index.html">
                     <img src="img/logo.png" alt="logo"></a></h1>
 
@@ -30,13 +30,11 @@
                 <input type=text>
                 <input type=submit>
             </div>
-            
-            <div class="menu-trigger">
+             <div class="menu-trigger">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-            
         </div>
 
         <nav>
@@ -82,6 +80,36 @@
 
 
     </main>
+    
+    <script>
+        var body = document.querySelector('body');
+        var menu = document.querySelectorAll('a');
+
+
+        setTimeout(function() {
+            body.classList.add('active');
+        }, 10);
+
+        menu[1].addEventListener('click', function(e) {
+            e.preventDefault();
+            body.classList.remove('active');
+
+            setTimeout(function() {
+                location.href = menu[1].href;
+            }, 1000);
+        });
+        
+        menu[0].addEventListener('click', function(e) {
+            e.preventDefault();
+            body.classList.remove('active');
+
+            setTimeout(function() {
+                location.href = menu[0].href;
+            }, 1000);
+        });
+
+    </script>
+
 
 
     <footer>
@@ -97,13 +125,13 @@
 
             <ul class="foot_3">
                 <li>
-                    <a href="https://www.instagram.com/?hl=ko"><img src="img/footer_instagram.png"></a>
+                    <a href="https://twitter.com/explore"><img src="img/footer_twitter.png" alt="twitter"></a>
                 </li>
                 <li>
-                    <a href="https://www.facebook.com/"><img src="img/footer_facebook.png"></a>
+                    <a href="https://www.youtube.com/"><img src="img/footer_youtube.png" alt="youtube"></a>
                 </li>
                 <li>
-                    <a href="https://www.youtube.com/"><img src="img/footer_youtube.png"></a>
+                    <a href="https://www.instagram.com/?hl=ko"><img src="img/footer_instagram.png" alt="instagram"></a>
                 </li>
             </ul>
         </div>

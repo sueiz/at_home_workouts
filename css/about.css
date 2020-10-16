@@ -1,5 +1,28 @@
 @import url('common.css');
 
+body header,
+body main {
+    transition: 1s;
+}
+
+header {
+    opacity: 0;
+    margin-top:-100px;
+}
+
+main {
+    opacity: 0;
+    margin-top:200px;
+}
+
+body.active header,
+body.active main {
+    opacity: 1;
+    margin-top:0;
+
+}
+
+/*==================*/
 header {
     width: 100%;
     position: fixed;
